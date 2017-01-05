@@ -5,3 +5,7 @@
 -- instead of having her name in 2 different columns. This columns should be called: full_name
 --
 -- columns: full_name, phone_number
+
+SELECT first_name ||' '|| last_name AS full_name , phone_number
+FROM applicants
+WHERE first_name LIKE 'Carol';
